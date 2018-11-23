@@ -6,7 +6,7 @@ body{
 }
 
 #leftSideThirdOne{
-    border-bottom: grey 2px solid;
+    margin: 0;
 
 }
 #battleText{
@@ -102,27 +102,30 @@ body{
 }
                                         //Goal
 #goal_LeftTop{
-    background-image: url("");
+    background-image: url("/icons/goal_2.png");
     background-position: center;
     background-size: cover;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
+    background-color: black;
+    border-top: 3px solid gold;
+    border-left: 3px solid gold;
     border-top-left-radius: 9px;
 }
 #goal_LeftBottom{
-    background-image: url("");
+    background-image: url("/icons/goal_3.png");
     background-position: center;
     background-size: cover;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
+    background-color: black;
+    border-bottom: 3px solid gold;
+    border-left: 3px solid gold;
     border-bottom-left-radius: 9px;
 }
 #goal_RightBottom{
-    background-image: url("");
+    background-image: url("/icons/goal_4.png");
     background-position: center;
     background-size: cover;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
+    background-color: black;
+    border-bottom: 3px solid gold;
+    border-right: 3px solid gold;
     border-bottom-right-radius: 9px;
 }
 
@@ -134,7 +137,7 @@ body{
     margin:0;
     height: 400px;
     &__sideBar{
-        background-color: grey;
+        background-color: white;
         width: $pieceWidth;
         height: $pieceHeight;
     }
@@ -160,7 +163,6 @@ body{
         border-radius: 10px;
     }
     &__trapPiece{
-        background-color: red;
         width: 100%;
         height: $pieceHeight;
         border: 1px solid black;
@@ -209,7 +211,6 @@ body{
         background-image: url("/icons/roadUp.png");
         background-position: center;
         background-size: cover;
-        color: orange;
         width: 100%;
         height: auto;
         border: 1px solid black;
@@ -219,7 +220,6 @@ body{
         background-image: url("/icons/roadDown.png");
         background-position: center;
         background-size: cover;
-        color: orange;
         width: 100%;
         height: auto;
         border: 1px solid black;
@@ -261,18 +261,23 @@ body{
         height: $pieceHeight;
     }
     &__startPiece{
-        background-color: green;
+        background-image: url("/icons/roadStart.png");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: auto;
         border: 1px solid black;
         border-radius: 10px;
     }
     //---------------------------------------Goal---------------------------------//
     &__goalEnd{
-        background-image: url("");
+        background-image: url("/icons/goal_1.png");
         background-position: center;
         background-size: cover;
-        background-color: darkgreen;
-        border-top: 1px solid black;
-        border-right: 1px solid black;
+        color: white;
+        background-color: black;
+        border-top: 3px solid gold;
+        border-right: 3px solid gold;
         border-top-right-radius: 9px;
     }
 }

@@ -12,7 +12,7 @@ fetch('https://anapioficeandfire.com/api/characters')
         return response.json();
     })
     .then(function (myJson) {
-        console.log(JSON.stringify(myJson));
+        //console.log(JSON.stringify(myJson));
         FunctionOne(myJson);
         myJsonData = myJson;
 
@@ -101,7 +101,7 @@ function FunctionOne(myJson) {
     var hodor = document.createElement("p");
         hodor.setAttribute("class","[ selection__characterInfo ]");
         hodor.setAttribute("id","hodor");
-        hodor.innerHTML="Hodor is simple-minded and he is only capable of saying one word, 'hodor', though he can understand complex instructions other people give him.";
+        hodor.innerHTML="Hodor is simple-minded,only capable of saying one word, 'hodor', though he can understand complex instructions.";
         document.getElementById("1").appendChild(hodor);
             //button
     var infoButtonHodor = document.createElement("button");
@@ -120,7 +120,7 @@ function FunctionOne(myJson) {
     var lamprey = document.createElement("p");
         lamprey.setAttribute("class","[ selection__characterInfo ]");
         lamprey.setAttribute("id","lamprey");
-        lamprey.innerHTML="Unwashed hair and pebbled skin. He once brought the imprisoned Davos Seaworth some lamprey and got it a his nickname";
+        lamprey.innerHTML="Unwashed hair and pebbled skin. He once brought the imprisoned Davos Seaworth some lamprey and got it a his nickname.";
         document.getElementById("2").appendChild(lamprey);
             //button
     var infoButtonLamprey = document.createElement("button");
@@ -139,7 +139,7 @@ function FunctionOne(myJson) {
     var queen = document.createElement("p");
         queen.setAttribute("class","[ selection__characterInfo ]");
         queen.setAttribute("id","queen");
-        queen.innerHTML="The Merling Queen is a courtesan in Braavos. She is beautiful and she i deadly. She is never seen without her Mermaids to hold her hair and veil.";
+        queen.innerHTML="The Merling Queen is a courtesan in Braavos. Both beautiful and deadly. Never seen without her Mermaids to hold her hair and veil.";
         document.getElementById("3").appendChild(queen);
             //button
     var infoButtonQueen = document.createElement("button");
@@ -158,7 +158,7 @@ function FunctionOne(myJson) {
     var crackbones = document.createElement("p");
         crackbones.setAttribute("class","[ selection__characterInfo ]");
         crackbones.setAttribute("id","crackbones");
-        crackbones.innerHTML="Crackbones fought a dragon once,he didn't need no magic sword. He just tied its neck in a knot, so every time it breathed fire it roasted its own arse.";
+        crackbones.innerHTML="Crackbones fought a dragon once,didn't need no magic sword. Just tied its neck in a knot, every time it breathed fire it roasted its own arse.";
         document.getElementById("4").appendChild(crackbones);
             //button
     var infoButtonCrackbones = document.createElement("button");
@@ -196,7 +196,7 @@ function FunctionOne(myJson) {
     var porridge = document.createElement("p");
         porridge.setAttribute("class","[ selection__characterInfo ]");
         porridge.setAttribute("id","porridge");
-        porridge.innerHTML="Porridge is a gaoler at Dragonstone. He once brought the imprisoned Davos Seaworth some Porridge and got it a his nickname";
+        porridge.innerHTML="Porridge is a gaoler at Dragonstone. He brought the imprisoned Davos Seaworth some Porridge and got it as him nickname.";
         document.getElementById("6").appendChild(porridge);
             //button
     var infoButtonPorridge = document.createElement("button");
@@ -216,7 +216,7 @@ function FunctionOne(myJson) {
     var quickfinger = document.createElement("p");
         quickfinger.setAttribute("class","[ selection__characterInfo ]");
         quickfinger.setAttribute("id","quickfinger");
-        quickfinger.innerHTML="Quickfinger was a master thief. With his biggest goal in sight, to steal several real dragon eggs. Will he succeed or will he be imprisoned?";
+        quickfinger.innerHTML="Quickfinger was a master thief. With his biggest goal in sight, to steal several real dragon eggs. He sadly got imprisoned.";
         document.getElementById("7").appendChild(quickfinger);
             //button
     var infoButtonQuickfinger = document.createElement("button");
@@ -235,7 +235,7 @@ function FunctionOne(myJson) {
     var wife = document.createElement("p");
         wife.setAttribute("class","[ selection__characterInfo ]");
         wife.setAttribute("id","wife");
-        wife.innerHTML="Loosing her husband to the sea at age 14. Praying daily at the temple for her husband to return. Will her prayers be granted by the gods?";
+        wife.innerHTML="Loosing her husband to the sea at age 14. Praying daily at the temple for her husband to return. Will her prayers be heard?";
         document.getElementById("8").appendChild(wife);
             //button
     var infoButtonSailorWife = document.createElement("button");
@@ -259,22 +259,44 @@ function FunctionOne(myJson) {
             //button
     var infoButtonVeiledLady = document.createElement("button");
         infoButtonVeiledLady.setAttribute("class", "[ selection--selectButton ]");
+        infoButtonVeiledLady.setAttribute("id","testing");
         infoButtonVeiledLady.innerHTML = "Select";
         document.getElementById("9").appendChild(infoButtonVeiledLady);
+        document.getElementById("testing").addEventListener("click",addEvents());
 }
-
 
 
 
 //PLAYERS
 
-var brorDi = document.getElementsByClassName("selection--selectButton");
+function collect(){
+    var myStorage = localStorage.setItem( "api",'https://anapioficeandfire.com/api/characters');
+    console.log("test");
+    console.log(myStorage);
+}
 
-for(item in brorDi){
-    console.log(item)
-    console.log("first select");
+
+function addEvents(){
+    var buttin = document.getElementById("testing");
+    buttin.addEventListener("click", collect());
+}
+
+
+/*
+
+var listOfButtons = document.getElementsByClassName("selection--selectButton");
+console.log(listOfButtons);
+
+let apple = document.querySelectorAll();
+
+for( var i = 0; i < listOfButtons.length; i++){
+    console.log("Hallo");
+*/
+
+    /*
     item.addEventListener("click", function(){
         console.log("player 1");
+        console.log(listOfButtons[i].button);
         if(playerOne.aliases == "#"){
             playerOne.aliases = myJson[i].aliases;
             localStorage.setItem("Challenger One", playerOne.aliases);
@@ -286,9 +308,9 @@ for(item in brorDi){
             localStorage.setItem("Challenger Two", playerTwo.aliases);
         }
         console.log(playerOne);
-        console.log(playerTwo);
-    });
-}
+        console.log(playerTwo);*/
+    //});
+
 
 /*
 function selectCharacter(character){
