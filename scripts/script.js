@@ -2,7 +2,7 @@ var myJsonData;
 var playerOne = {
     aliases: "#"
 }
-var playerTwo = {  
+var playerTwo = {
     aliases: "#"
 }
 
@@ -73,7 +73,7 @@ function FunctionOne(myJson) {
 //THE DAUGHTER OF THE DUSK
             //icon
     var iconDusk = new Image(0,0);
-        iconDusk.src="icons/DaughterDusk_icon.png";
+        iconDusk.src="icons/0.png";
         iconDusk.setAttribute("class","[ selection__icon ]");
         iconDusk.setAttribute("id","iconDusk");
         document.getElementById("0").appendChild(iconDusk);
