@@ -215,3 +215,21 @@ starticon.appendChild(portraits);
 //Make end goal react
 //congrat winner
 //Create Traps
+
+
+// anyways not sure what you did there but I think you should start over with this script
+// You have the url inside local storage
+
+//1. make two fetches to get the details for each character because we saved a url.
+//2. create a function that rolls a dice. Math.Random() method from one to six.
+// When you done with these two tasks let me know ok.... Then we will move on to the next parts. =/ i already have the dice done, and it 
+//follows the tiles on the gameboard
+// ok what are you needing to do now?
+// import the icon ..sec..to the first tile. thats the first task ive set
+// ok so lets do this can I see what you have in local storage?
+//the name. only the name tho. thats why im using the switch statement
+// remember when we came from the select page we saved stuff in local storage which was a URL?
+//i changed it to alias instead as it ..well it didnt bring me anything else. it was only the alias i needed.
+//the icons is something ive got on the pc and not the url
+// I know that but you need the URL this switch is too heavy to keep here, Did you change my code?
+//maybe  <.<
