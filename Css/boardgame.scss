@@ -133,11 +133,27 @@ body{
 
 
 //-------------------------------------Class Tags------------------------------//
+
+.iconInput{
+    padding-bottom: 10px !important;
+    font-size: 18px;
+    //text-decoration: underline;
+}
+.selection{
+    padding-top: 19px !important;
+    &__icon{
+        max-height: 90px;
+        max-width: 113px;
+        margin-bottom: -15px;
+
+    }
+}
 .boardGame{
     margin:0;
     height: 400px;
     &__sideBar{
-        background-color: white;
+        background-image: url("/images/card_background.jpg");
+        background-size: cover;
         width: $pieceWidth;
         height: $pieceHeight;
     }
@@ -211,6 +227,7 @@ body{
         background-image: url("/icons/roadUp.png");
         background-position: center;
         background-size: cover;
+        color: orange;
         width: 100%;
         height: auto;
         border: 1px solid black;
@@ -220,6 +237,7 @@ body{
         background-image: url("/icons/roadDown.png");
         background-position: center;
         background-size: cover;
+        color: orange;
         width: 100%;
         height: auto;
         border: 1px solid black;
@@ -256,9 +274,10 @@ body{
         border-radius: 10px;
     }
     &__boardIcon{
-        background-color: orange;
-        width: $pieceWidth;
-        height: $pieceHeight;
+        background-image: url("/images/card_background.jpg");
+        background-size: cover;
+        max-width: $pieceWidth;
+        max-height: $pieceHeight;
     }
     &__startPiece{
         background-image: url("/icons/roadStart.png");

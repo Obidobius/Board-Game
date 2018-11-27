@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color: black;
+  color: white;
   font-family: 'Playfair Display SC', serif;
 }
 
@@ -22,11 +22,18 @@ p {
   background-color: darkolivegreen;
 }
 
+#gotLogo {
+  width: 250px;
+  height: 210px;
+}
+
 .card {
-  width: 22rem;
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
+  width: 53rem;
   margin-bottom: 40px;
   padding: 4px;
-  border: groove grey 4px !important;
+  border: groove silver 4px !important;
   border-radius: 9px !important;
 }
 
@@ -58,7 +65,7 @@ p {
 }
 
 .card-body__characterTitle {
-  color: black;
+  color: white;
   font-family: 'Playfair Display SC', serif;
   min-height: 50px;
 }
@@ -78,6 +85,8 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .selection--selectButton {
@@ -141,7 +150,7 @@ p {
     padding-top: 9px !important;
     -ms-flex-line-pack: center;
         align-content: center;
-    min-width: 1500px;
+    max-width: 16rem;
   }
   .selection--selectButton:hover {
     font-family: 'Playfair Display SC', serif;
@@ -172,15 +181,13 @@ p {
     color: #f4b342;
   }
   .card {
-    width: 13rem;
+    width: 22rem;
     padding: 4px;
     margin: 4px;
     padding-top: 40px;
   }
   .row {
     margin: 0 !important;
-    display: -ms-grid;
-    display: grid;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

@@ -15,7 +15,7 @@ body{
     background-repeat: no-repeat;
     }
 p{
-    color: black;
+    color: white;
     font-family: 'Playfair Display SC', serif;
 }
 
@@ -26,11 +26,17 @@ p{
     background-color:darkolivegreen;
 }
 
+#gotLogo{
+    width:250px;
+    height:210px;
+}
 .card{
-    width: 22rem;
+    background-image: url("/images/card_background.jpg");
+    background-size: cover;
+    width: 53rem;
     margin-bottom: 40px;
     padding: 4px;
-    border: groove grey 4px !important;
+    border: groove silver 4px !important;
     border-radius: 9px !important;
 }
 
@@ -38,7 +44,6 @@ p{
     top: 50px;
     padding-top:20px !important;
     text-align: center;
-
     border-radius: 9px;
     &--mainTitle{
         text-decoration: underline;
@@ -59,7 +64,7 @@ p{
     margin: 0;
     padding: 2px !important;
     &__characterTitle{
-        color: black;
+        color: white;
         font-family: 'Playfair Display SC', serif;
         min-height: 50px;
     }
@@ -74,6 +79,7 @@ p{
         height: $iconHeigt;
         width: $iconWidth;
         align-self: center;
+        align-content: center;
     }
     &--selectButton{
         font-family: 'Playfair Display SC', serif;
@@ -134,7 +140,7 @@ p{
 .selection{
     padding-top: 9px !important;
     align-content: center;
-    min-width: 1500px;
+    max-width: 16rem;
     &--selectButton:hover{
         font-family: 'Playfair Display SC', serif;
         background-color:darkred;
@@ -164,14 +170,13 @@ p{
         }
     }
     .card{
-        width: 13rem;
+        width: 22rem;
         padding: 4px;
         margin: 4px;
         padding-top: 40px;
     }
     .row{
         margin: 0 !important;
-        display: grid;
         justify-content: center;
     }
 
