@@ -11,8 +11,8 @@ function createCharacters(characters){
     console.log(characters);
     var cardContainer = document.getElementById('characterCardsContainer');
     for(var i = 0; i < characters.length; i++){
-        
-        var characterCard = 
+
+        var characterCard =
         '<div class=" col-sm-4  card [ selection ]" id=\"' + i + '\">' +
             '<div class="[ col-sm-12 ] card-body">' +
 
@@ -39,10 +39,12 @@ function selectCharacter(url, id){
         counter++;
         if(counter === 1 ) {
             localStorage.setItem('Player 1', url);
+            localStorage.setItem('Player_1_id', id);
             alert('Player One Selected')
         }
         else{
             localStorage.setItem('Player 2', url);
+            localStorage.setItem('Player_2_id', id);
             alert('Player Two Selected')
 
         }
