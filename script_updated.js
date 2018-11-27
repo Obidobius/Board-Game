@@ -22,27 +22,27 @@ function createCharacters(characters){
 
                 '<p> gender: '+ characters[i].gender +'</p>' +
 
-                "<div><button class='[ selection--selectButton ]' onclick='selectCharacter(\"" + characters[i].url + "\", " + i + ")'>Select</button></div>"+
+                "<div><button class='[ selection--selectButton ]' onclick='selectCharacter(\"" + characters[i].aliases[0] + "\")'>Select</button></div>"+
             '</div>'
         '</div>';
         cardContainer.innerHTML += characterCard;
     }
 };
-//no where you call the function here
+
 
 
 //PLAYERS
         // We need to see a character is clicked
         // save the url to local storage
-function selectCharacter(url, id){
+function selectCharacter(alias){
     if(counter < 2){
         counter++;
         if(counter === 1 ) {
-            localStorage.setItem('Player 1', url);
+            localStorage.setItem('Player 1', alias);
             alert('Player One Selected')
         }
         else{
-            localStorage.setItem('Player 2', url);
+            localStorage.setItem('Player 2', alias);
             alert('Player Two Selected')
 
         }
@@ -67,11 +67,3 @@ function startRace(){
         alert("Please select a character")
     };
 };
-
-//please dont change this code again
-// rerun this application and select two players
-// rememeber how we got the icons to show on this page? yea by going after the number 0-9.p
-// You see when you passing the URL in?
-// I want you to pass in a second parameter called id
-// We are going to set an id in local storage so we can get the icon out
-// does that make sense? i think so. on the img tag?, yes so do that now well catch up tomorrow or just now
