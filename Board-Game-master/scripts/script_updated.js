@@ -18,7 +18,7 @@ function createCharacters(characters){
 
                 '<img class="[ selection__icon ]" src="icons/'+ [i] +'.png" />'+
 
-                '<h5 class="card-title [ card-body__characterTitle ]"> name '+ characters[i].aliases[0] +'</h5>' +
+                '<h5 class="card-title [ card-body__characterTitle ]"> name: '+ characters[i].aliases[0] +'</h5>' +
 
                 '<p> gender: '+ characters[i].gender +'</p>' +
 
@@ -38,7 +38,7 @@ function selectCharacter(alias){
     if(counter < 2){
         counter++;
         if(counter === 1 ) {
-            localStorage.setItem('Player 1', alias) ;
+            localStorage.setItem('Player 1', alias);
             alert('Player One Selected')
         }
         else{

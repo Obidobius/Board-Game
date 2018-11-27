@@ -136,8 +136,7 @@ body {
 
 .iconInput {
   padding-bottom: 10px !important;
-  font-size: 20px;
-  text-decoration: underline;
+  font-size: 18px;
 }
 
 .selection {
@@ -156,7 +155,8 @@ body {
 }
 
 .boardGame__sideBar {
-  background-color: white;
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
   width: 20px;
   height: 120px;
 }
@@ -287,7 +287,8 @@ body {
 }
 
 .boardGame__boardIcon {
-  background-color: white;
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
   max-width: 20px;
   max-height: 120px;
 }

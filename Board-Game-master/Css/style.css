@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  color: black;
+  color: white;
   font-family: 'Playfair Display SC', serif;
 }
 
@@ -22,11 +22,18 @@ p {
   background-color: darkolivegreen;
 }
 
+#gotLogo {
+  width: 250px;
+  height: 210px;
+}
+
 .card {
+  background-image: url("/images/card_background.jpg");
+  background-size: cover;
   width: 53rem;
   margin-bottom: 40px;
   padding: 4px;
-  border: groove grey 4px !important;
+  border: groove silver 4px !important;
   border-radius: 9px !important;
 }
 
@@ -58,7 +65,7 @@ p {
 }
 
 .card-body__characterTitle {
-  color: black;
+  color: white;
   font-family: 'Playfair Display SC', serif;
   min-height: 50px;
 }
